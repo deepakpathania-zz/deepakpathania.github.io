@@ -132,6 +132,13 @@
                         <img src="img/profile.png" class="img-responsive" alt="" >
                     </a>
                 </div>
+
+
+
+
+
+
+                
             </div>
         </div>
     </section>
@@ -148,18 +155,21 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                     <ul>
-                    <li><p>I currently have three different internship offers as a web developer and a UI/UXdesigner. <br/>I am still looking forward to more opportunities<br/> since I would like to join the best possible firm where I not only get to push my limits but also get the right exposure and experience.</p></li>
+                    <li><p><strong>I am currently working as a web development intern at RS Matrimonial where I manage the front end web development and the complete UI/UX designing.</strong></p></li>
                     <li><p>I am a lead intern at Internshala where I manage a team of about 120 people from across the country.</p></li> 
-                    <li><p>I was the Campus Manager at frankly.me and Alphapreneur at 91Springboard.</p></li> 
+                    <li><p>I was the Campus Manager at frankly.me </p> </li>
+                     <li><p>I was also an Alphapreneur at 91Springboard, a start up incubator.</p></li> 
 
             
+               
+
                 </ul>
                 </div>
                 <div class="col-lg-4">
                     <ul>
-                            <li><p>I have been to a few hackathons and bagged third prize at JSS Hackathon 2015. I look forward to more such events.</p></li>
-                    <li><p>In my campus, I am the IEEE Design Head and IEEE Technical co-ordinator.</p></li>
-
+                    <li><p>I have been to a few hackathons and bagged third prize at JSS Hackathon 2015. I look forward to more such events.</p></li>
+                         <li><p>In my campus, I am the IEEE Design Head and IEEE Technical co-ordinator.</p></li>
+                            
                     <li><p>Moreover, I am the IEEE SIG Head for Java and Graphic Designing and Technical co-ordinator for Prakriti. </p></li>
 
                     <li><p> I am also the Event Head for a tech event named AlgoJam in Avensis-2016- The Annual Tech Fest of MSIT.</p></li>
@@ -235,29 +245,62 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4 ">
-                        <h3 class = "animated infinite bounce">Code Unites</h3>
-                         <a href="http://hackerrank.com/deepakpathania" class="btn-social btn-outline"><i class="fa fa-fw fa-code"></i></a>
+                        <h3 id = "code">Code Unites</h3>
+                         <a  href="http://hackerrank.com/deepakpathania" class="btn-social btn-outline" onmouseover="f()" onmouseout = "f2()"><i class="fa fa-fw fa-code"></i></a>
                     </div>
+                    <script type="text/javascript">
+                    function f() {
+                    	var x = document.getElementById('code');
+                    	x.className+="animated bounce";
+                    }
+                    function f2() {
+                    	var x = document.getElementById('code');
+                    x.className="";	
+                    }
+                 
+                    </script>
                     <div class="footer-col col-md-4 ">
-                        <h3 class = "animated infinite bounce">Around the Web</h3>
+                        <h3 id="web">Around the Web</h3> 
                         <ul class="list-inline list-inline quicklinks">
                             <li>
-                                <a href="https://www.facebook.com/deepak.pathania.7739" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/deepak.pathania.7739" class="btn-social btn-outline" onmouseover="f3()" onmouseout = "f4()"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                            
                             <li>
-                                <a href="http://in.linkedin.com/in/deepak-pathania-51067610a" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="http://in.linkedin.com/in/deepak-pathania-51067610a" class="btn-social btn-outline" onmouseover="f3()" onmouseout = "f4()"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
 
                             <li>
-                                <a href="https://github.com/deepakpathania" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/deepakpathania" class="btn-social btn-outline" onmouseover="f3()" onmouseout = "f4()"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
+                    <script type="text/javascript">
+                    function f3() {
+                        var x = document.getElementById('web');
+                        x.className+="animated bounce";
+                    }
+                    function f4() {
+                        var x = document.getElementById('web');
+                    x.className=""; 
+                    }
+                 
+                    </script>
                     <div class="footer-col col-md-4 ">
-                        <h3 class = "animated infinite bounce">Made with code</h3>
-                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-heart"></i></a>
+                        <h3 id="heart">Made with code</h3>
+                    <a href="#" class="btn-social btn-outline" onmouseover="f5()" onmouseout = "f6()"><i class="fa fa-fw fa-heart"></i></a>
                     </div>
+                    <script type="text/javascript">
+                    function f5() {
+                        var x = document.getElementById('heart');
+                        x.className+="animated bounce";
+                    }
+                    function f6() {
+                        var x = document.getElementById('heart');
+                    x.className=""; 
+                    }
+                 
+                    </script>
                 </div>
             </div>
         </div>
