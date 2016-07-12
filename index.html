@@ -596,10 +596,9 @@
       <script src="js/custom.js"></script>    
       <script type="text/javascript">
         // $("#contact-form").ajaxSubmit({url: 'https://enigmatic-inlet-55015.herokuapp.com/', type: 'post'})
-        $("submit-btn").click(function(e) {
-        e.preventDefault();
+        $(".submit-btn").click(function(e) {
         $.post(
-            'http://localhost:8080', 
+            'https://enigmatic-inlet-55015.herokuapp.com/', 
             {
               username: $('#contact-name').val(),
               email: $('#email').val(),
