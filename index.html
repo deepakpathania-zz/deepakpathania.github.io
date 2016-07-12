@@ -606,6 +606,20 @@
             }, 
             function(res) {
               console.log(res);
+              if(res.success==0) {
+                $('#contact-name').val(" ");
+                $('#email').val(" ");
+                $('#textarea1').val(" ");
+                window.alert("Hey there seems to be some problem with the contact form. Drop a mail at deepakpathania789@gmail.com. Sorry for the inconvenience.");
+               
+
+              }
+              else {
+                $('#contact-name').val(" ");
+                $('#email').val(" ");
+                $('#textarea1').val(" ");
+                widnow.alert("Hey. Thanks for reaching out. I'll get back to you shortly. :)");
+              }
             }
         );
       });
