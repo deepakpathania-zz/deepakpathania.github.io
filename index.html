@@ -544,7 +544,7 @@
                                   <textarea class="materialize-textarea" name="contactMessage" id="textarea1"></textarea>
                                   <label class="input-label" for="textarea1">Message</label>
                                 </div>
-                                <button class="left waves-effect btn-flat brand-text submit-btn" type="submit">send message</button>
+                                <button class="left waves-effect btn-flat brand-text submit-btn" type="button">send message</button>
                               </form>
                             </div>
                           </div>
@@ -596,7 +596,8 @@
       <script src="js/custom.js"></script>    
       <script type="text/javascript">
         // $("#contact-form").ajaxSubmit({url: 'https://enigmatic-inlet-55015.herokuapp.com/', type: 'post'})
-        $("submit-btn").click(function() {
+        $("submit-btn").click(function(e) {
+        e.preventDefault();
         $.post(
             'http://localhost:8080', 
             {
