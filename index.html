@@ -600,30 +600,34 @@
 
         // $("#contact-form").ajaxSubmit({url: 'https://enigmatic-inlet-55015.herokuapp.com/', type: 'post'})
         $(".submit-btn").click(function(e) {
-        if($('#contact-name').val() == "" || $('#email').val()==""||$('#textarea1').val()=="") {
-            swal("Incomplete data", "Please fill out all the fields first. Thanks :)");
+        if($('#contact-name').val() == "" || $('#email').val()==""|| $('#textarea1').val()=="" || !$("#contact-form")[0].checkValidity()) {
+            swal("Incomplete data", "Please fill out all the fields correctly. Thanks :)");
         }
         else {
-        $.post(
-            'https://enigmatic-inlet-55015.herokuapp.com/', 
-            {
-              username: $('#contact-name').val(),
-              email: $('#email').val(),
-              msg: $('#textarea1').val()
-            }, 
-            function(res) {
-              console.log(res);
-                $('#contact-name').val("");
-                $('#email').val("");
-                $('#textarea1').val("");
-              if(res.success==0) {
-               swal("Error :(", "Reach out directly at deepakpathania789@gmail.com. Sorry for inconvenience");
+          $(".submit-btn").html('<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>');
+          $(".submit-btn").attr('disabled', true);
+          $.post(
+              'https://enigmatic-inlet-55015.herokuapp.com/', 
+              {
+                username: $('#contact-name').val(),
+                email: $('#email').val(),
+                msg: $('#textarea1').val()
+              }, 
+              function(res) {
+                console.log(res);
+                  $('#contact-name').val("");
+                  $('#email').val("");
+                  $('#textarea1').val("");
+                if(res.success==0) {
+                 swal("Error :(", "Reach out directly at deepakpathania789@gmail.com. Sorry for inconvenience");
+                }
+                else {
+                  swal("Thanks!", "I'll reach out to you as soon as I can.!", "success");
+                }
+                $(".submit-btn").html('Send Message');
+                $(".submit-btn").attr('disabled', false);
               }
-              else {
-                swal("Thanks!", "I'll reach out to you as soon as I can.!", "success");
-              }
-            }
-        );
+          );
       }
       });
       </script>  
