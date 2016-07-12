@@ -51,3 +51,11 @@ body {
 .frankly {
 	width:195% !important;
 }
+.crop {
+	min-height: 178px;
+    width: 111% !important;
+    margin-left: -16px;
+}
+.rent {
+	min-height: 178px;
+}
