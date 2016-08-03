@@ -250,10 +250,10 @@
   color: #ce93d8 !important; }
 
 .purple.lighten-2 {
-  background-color: #ba68c8 !important; }
+  background-color: rgba(0, 166, 226, 0.97) !important; }
 
 .purple-text.text-lighten-2 {
-  color: #ba68c8 !important; }
+  color: rgba(0, 166, 226, 0.97) !important; }
 
 .purple.lighten-1 {
   background-color: #ab47bc !important; }
