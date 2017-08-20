@@ -694,7 +694,7 @@ html, body {
     top: 0;
     bottom: 10px;
     left: 50%;
-    height: 75%;
+    height: 100%;
     width: 4px;
     opacity: 0.3;
     background: #06A763; }
