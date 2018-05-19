@@ -112,13 +112,13 @@ html .btn, body .btn {
     margin: 8px 0; }
 .card .card-content {
     /*card content*/
-    padding: 40px;
+    padding: 35px;
     border-radius: 0 0 2px 2px; }
 .card .card-content p {
     /*paragraph style inside card content*/
     margin: 0;
     color: inherit;
-    text-align: center; }
+    text-align: justify; }
 
 /*
 -------------------------------------------------------------------------------

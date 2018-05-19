@@ -2,3 +2,43 @@
 	font-size:21px !important;
 	padding-left: 0px !important 
 }
+
+.work-link:hover, #about a:hover {
+	background: #FF8F00;
+	color: white;
+	border-bottom: 1px solid #FF8F00;
+}
+
+.work-link {
+	color: white !important;
+	border-bottom: 1px dashed white;
+}
+
+.about-text {
+	text-align: justify !important;
+	padding: 30px !important;
+}
+
+.about-action {
+	padding: 10px !important;
+}
+
+#v-card-holder {
+	top: 85px !important;
+}
+
+#about {
+	margin-top: 95px !important;
+} 
+
+@media (max-width: 800px) {
+	#v-card-holder {
+		top: 100px !important;
+	}
+	#about {
+		margin-top: 140px !important;
+	}
+	.links {
+		margin: 0px 40px 9px !important;
+	}
+}
